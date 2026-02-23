@@ -1,176 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | CSE Portfolio</title>
+    <title>Elanchezhiyan D M | Portfolio</title>
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f6f9;
-            color: #333;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
         }
-        header {
-            background-color: #0a192f;
-            color: white;
-            padding: 40px 20px;
+
+        body {
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+
+        /* HEADER */
+        .top-header {
+            background: #0b1f3a;
             text-align: center;
+            padding: 50px 20px 40px;
         }
-        header h1 {
-            margin: 0;
-            font-size: 36px;
+
+        .top-header h1 {
+            font-size: 42px;
+            letter-spacing: 2px;
+            color: #ffffff;
+            margin-bottom: 10px;
         }
-        header p {
-            margin: 5px 0;
-            font-size: 18px;
+
+        .role {
+            font-size: 20px;
+            color: #cbd5e1;
+            margin-bottom: 8px;
         }
+
+        .contact {
+            font-size: 16px;
+            color: #94a3b8;
+            margin-bottom: 12px;
+        }
+
+        .links a {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .links a:hover {
+            color: #ffffff;
+        }
+
+        /* SECTION */
         section {
-             padding: 25px 20px;
-  	     max-width: 900px;
-   	     margin: 15px auto;
-	}
+            padding: 50px 12%;
+        }
+
         h2 {
-            color: #0a192f;
-            border-bottom: 2px solid #0a192f;
-            padding-bottom: 5px;
+            color: #38bdf8;
+            margin-bottom: 20px;
+            font-size: 24px;
         }
-        .skills, .projects {
-            display: grid;
-            gap: 15px;
+
+        /* TEXT */
+        p {
+            line-height: 1.8;
         }
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-        }
+
         ul {
+            margin-top: 10px;
             padding-left: 20px;
         }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* CARDS */
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(56, 189, 248, 0.3);
+        }
+
+        .card h3 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        /* BUTTON */
+        .btn {
+            display: inline-block;
+            padding: 8px 18px;
+            background: #38bdf8;
+            color: #0f172a;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ffffff;
+        }
+
+        /* FOOTER */
         footer {
-            background-color: #0a192f;
-            color: white;
             text-align: center;
             padding: 20px;
+            background: #0b1120;
+            font-size: 14px;
+            color: #94a3b8;
         }
-        a {
-            color: #64ffda;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            section {
+                padding: 40px 8%;
+            }
+
+            .top-header h1 {
+                font-size: 30px;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1>ELANCHEZHIYAN D M</h1>
-    <p>B.E Computer Science Engineering Student</p>
-    <p>Chennai, India | elanchezhiyan1403@gmail.com | +91 6369590070</p>
-    <p>
-        <a href="www.linkedin.com/in/elanchezhiyan-d-m-ba78bb2a2">LinkedIn</a> | 
-        <a href="https://github.com/Elanchezhiyan10">GitHub</a> | 
-        <a href="https://leetcode.com/u/Elanchezhiyan14/">LeetCode</a>
-    </p>
-</header>
+    <!-- HEADER -->
+    <header class="top-header">
+        <h1>ELANCHEZHIYAN D M</h1>
+        <p class="role">B.E Computer Science Engineering Student</p>
+        <p class="contact">
+            Chennai, India | elanchezhiyan1403@gmail.com | +91 6369590070
+        </p>
+        <p class="links">
+            <a href="https://www.linkedin.com/in/elanchezhiyan-d-m-ba78bb2a2" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/Elanchezhiyan10" target="_blank">GitHub</a> |
+            <a href="https://leetcode.com/u/Elanchezhiyan14/" target="_blank">LeetCode</a>
+        </p>
+    </header>
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        Motivated third-year Computer Science student with strong foundations in Java and Database Management Systems. Passionate about software development and problem-solving. Seeking opportunities to apply technical skills in real-world projects.
-    </p>
-</section>
+    <!-- ABOUT -->
+    <section>
+        <h2>About Me</h2>
+        <p>
+            I am a dedicated third-year Computer Science Engineering student with strong foundations in Java, Python,
+            and Database Management Systems.
+            I am passionate about building practical applications that solve real-world problems and improve user
+            experience.
+            <br><br>
+            I have hands-on experience developing applications using Flutter, AWS services, Firebase, and implementing
+            secure authentication systems.
+            I continuously strengthen my data structures and problem-solving skills through regular coding practice and
+            technical learning.
+            <br><br>
+            My goal is to contribute to impactful software projects while growing into a skilled and adaptable software
+            developer.
+        </p>
+    </section>
 
-<section>
-    <h2>Technical Skills</h2>
-    <div class="skills">
-        <div class="card">
-            <strong>Programming Languages:</strong>
-            <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>SQL</li>
-                <li>HTML, CSS</li>
-            </ul>
-        </div>
-        <div class="card">
-            <strong>Tools & Technologies:</strong>
-            <ul>
-                <li>VS Code</li>
-                <li>MySQL</li>
-                <li>Git & GitHub</li>
-            </ul>
-        </div>
-        <div class="card">
-            <strong>Core Subjects:</strong>
-            <ul>
-                <li>Data Structures & Algorithms</li>
-                <li>DBMS</li>
-                <li>OOPS</li>
+    <!-- PROJECTS -->
+    <section>
+        <h2>Projects</h2>
 
-            </ul>
-        </div>
-    </div>
-</section>
-
-<section>
-    <h2>Projects</h2>
-    <div class="projects">
         <div class="card">
-            <h3>Careloop-Elder Care App</h3>
-            <ul>
-                <li>Developed an Elder care app using flutter and Dart.</li>
-                <li>Implemented AWS and Firebase.</li>
-                <li>Designed a role based authentication using Cognito.</li>
-            </ul>
+            <h3>CareLoop – Elder Care Application</h3>
+            <p>
+                Developed a healthcare-focused mobile application using Flutter and Dart. Integrated AWS and Firebase
+                for backend services and implemented secure role-based authentication using Cognito.
+            </p>
+            <a href="https://github.com/Elanchezhiyan10/careloop_elder-app" target="_blank" class="btn">View Project</a>
         </div>
+
         <div class="card">
             <h3>Calorie Tracker App</h3>
+            <p>
+                Built a smart health tracking system that calculates BMI and BMR and tracks daily calorie intake.
+                Designed an intuitive interface and implemented dynamic progress monitoring features.
+            </p>
+            <a href="https://github.com/Elanchezhiyan10/Calorie-Tracker" target="_blank" class="btn">View Project</a>
+        </div>
+
+    </section>
+
+    <!-- INTERNSHIPS -->
+    <section>
+        <h2>Internships</h2>
+
+        <div class="card">
+            <h3>Artificial Intelligence Intern – Corizo</h3>
+            <p>Aug 2024 – Sep 2024</p>
             <ul>
-                <li>Built a BMI and BMR calculator.</li>
-                <li>Implemented calorie goal tracking with progress bar.</li>
-                <li>Designed clean and user-friendly interface.</li>
+                <li>Worked on Regression models and Neural Networks.</li>
+                <li>Built prediction models using TensorFlow and Keras.</li>
+                <li>Performed data preprocessing using Pandas and Matplotlib.</li>
             </ul>
         </div>
-    </div>
-</section>
 
-<section>
-    <h2>Internship</h2>
-    <div class="card">
-        <h3>Artificial Intelligence Intern</h3>
-        <p>Corizo (Aug 2024 - Sep 2024)</p>
-        <ul>
-            <li>Learned Regression, Neural Networks, TensorFlow, and Keras.</li>
-            <li>Built prediction models using real-world datasets.</li>
-            <li>Performed data preprocessing and visualization using Pandas and Matplotlib.</li>
-        </ul>
-    </div>
-</section>
+        <div class="card">
+            <h3>Full Stack Development - GenzEducateWing</h3>
+            <p>July 2025 - Sep 2025</p>
+            <ul>
+                <li>Worked on SpringBoot and React.</li>
+                <li>Learnt MySQL for Database.</li>
+                <li>Built a blogging platform and interactive QUIZ application development.</li>
+            </ul>
+        </div>
 
-<section>
-    <h2>Certifications</h2>
-    <ul>
-        <li>NPTEL Certification in JAVA and Machine Learning</li>
-        <li>AWS cloud Certification</li>
-    </ul>
-</section>
+    </section>
 
-<section>
-    <h2>Achievements & Activities</h2>
-    <ul>
-        <li>Participated in IEEE Conferences and Hackathons.</li>
-        <li>Solved problems on LeetCode</li>
-        <li>Active football player demonstrating teamwork,discipline and leadership.</li>
-    </ul>
-</section>
+    <!-- CERTIFICATIONS -->
+    <section>
+        <h2>Certifications</h2>
+        <div class="card">
+            <ul>
+                <li>NPTEL Certification in Java</li>
+                <li>NPTEL Certification in Machine Learning</li>
+                <li>AWS Cloud Certification</li>
+            </ul>
+        </div>
+    </section>
 
-<footer>
-    <p>Open to Internship and Full-Time Opportunities</p>
-</footer>
+    <!-- ACHIEVEMENTS -->
+    <section>
+        <h2>Achievements & Activities</h2>
+        <div class="card">
+            <ul>
+                <li>Participated in IEEE Conferences and Hackathons.</li>
+                <li>Solved problems consistently on LeetCode.</li>
+                <li>Active football player demonstrating teamwork and leadership.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Elanchezhiyan D M | All Rights Reserved
+    </footer>
 
 </body>
+
 </html>
